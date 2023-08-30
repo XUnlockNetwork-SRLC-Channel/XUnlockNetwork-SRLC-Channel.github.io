@@ -34,15 +34,7 @@ output {
   border-radius: 16px;  
 }
 
-button {
-  display: block;
-  font-size: 16px;
-  border: 2px solid black;
-  border-radius: 8px;
-  padding: 16px;
-  margin: 0 8px;
-  text-transform: uppercase;
-}
+
 
 /* Hide Install button until beforeinstallprompt fires */
 #install { 
