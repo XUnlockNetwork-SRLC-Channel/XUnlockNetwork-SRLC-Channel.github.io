@@ -4,6 +4,7 @@ SPDX-License-Identifier: Apache-2.0 */
 /* CSS files add styling rules to your content */
 
 body {
+  background: linear-gradient(180deg, #666666 0%, #000000 100%)
   font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
   margin: 2em;
 }
@@ -23,7 +24,15 @@ h1 {
   text-align: center;
   margin-bottom: 16px;
 }
-
+button {
+  display: block;
+  font-size: 16px;
+  border: 2px solid black;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 0 8px;
+  text-transform: uppercase;
+}
 output {
   display: block;
   color: gray;
