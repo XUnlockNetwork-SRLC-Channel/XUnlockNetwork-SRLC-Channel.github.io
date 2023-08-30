@@ -1,0 +1,93 @@
+/*Main Styling*/
+td {
+  padding: 5px;
+}
+    
+#app {
+  text-align: center;
+  width: 135px;
+  cursor: pointer;
+}
+
+#rcorners:hover {
+  transform: scale(1.05)
+}
+    
+#rcorners {
+  border-radius: 25px;          
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 150px;
+  padding: 20px; 
+  height: 100px;  
+  width: 100px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.divider {
+    padding: 10px;
+    background-color: #181818;
+    color: white;
+    }
+
+div.xscroll {
+    overflow: auto;
+    white-space: nowrap;
+    background-color: #282820;
+}
+  body {
+    background-color: #282820;
+  }
+  div#app > h3 > a {
+    color: white;
+  }
+  div.divider > button {
+    background-color: #282820;
+    cursor: pointer;
+    color: white;
+  }
+
+/*App Images*/
+#shadowproxy {
+    background: url(../images/shadows-proxy.jpeg); 
+}
+#tinyfishing {
+    background: url(../images/tinyfishing.jpeg); 
+}
+#retroarch {
+    background: url(../images/retroarch.png); 
+}
+#paperio2 {
+    background: url(../images/paperio.jpeg); 
+}
+#notepad {
+    background: url(../images/notepad.png); 
+}
+#chan {
+    background: url(../images/chan.jpg); 
+}
+#bitplanes {
+    background: url(../images/bitplanes.jpeg); 
+}
+#basket-random {
+    background: url(../images/basket-random.png); 
+}
+#tffe {
+    background: url(../images/2048.png); 
+}
+#mandalin {
+    background: url(../images/mandalin.jpeg); 
+}
+
+/*Theme Images*/
+#softpurple {
+    background: purple;
+}
+#windows {
+    background: url(../images/windows.png); 
+}
+#monospace {
+    background: url(../images/mono.png);
+    background-color: black;
+}
