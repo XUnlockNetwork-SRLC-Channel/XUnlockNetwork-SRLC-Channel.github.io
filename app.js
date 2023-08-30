@@ -6,7 +6,7 @@ window.addEventListener("DOMContentLoaded", async event => {
   } else {
     showResult("❌ BeforeInstallPromptEvent NOT supported");    
   }
-  document.querySelector("install").addEventListener("click", installApp);
+  document.querySelector("#install").addEventListener("click", installApp);
 });
 
 let deferredPrompt;
@@ -23,6 +23,7 @@ window.addEventListener('beforeinstallprompt', (e) => {
 });
 
 window.addEventListener('appinstalled', (e) => {
+  
   showResult("✅ AppInstalled fired", true);
 });
 
