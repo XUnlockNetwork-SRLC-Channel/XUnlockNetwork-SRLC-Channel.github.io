@@ -58,9 +58,9 @@ async function installApp() {
 }
 
 function showResult(text, append=false) {
-  if (append) {
-      log("<br>" + text);
+   if (append) {
+      document.querySelector("output").innerHTML += "<br>" + text;
   } else {
-log(text);
+     document.querySelector("output").innerHTML = text;    
   }
 }
