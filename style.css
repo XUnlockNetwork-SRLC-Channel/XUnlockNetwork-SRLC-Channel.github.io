@@ -4,9 +4,10 @@ SPDX-License-Identifier: Apache-2.0 */
 /* CSS files add styling rules to your content */
 
 body {
-  background: linear-gradient(180deg, #666666 0%, #000000 100%)
+
   font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
   margin: 2em;
+    background: linear-gradient(180deg, #666666 0%, #000000 100%)
 }
 
 h1 {
