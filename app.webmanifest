@@ -1,6 +1,6 @@
 {
-  "name": "Web App Manifest Demo",
-  "short_name": "ManifestDemo",
+  "name": "LHBOS",
+  "short_name": "BrewOS",
   "theme_color": "red",
   "background_color": "silver",
   "start_url": "/LHBOS/index.html",
