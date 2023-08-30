@@ -1,0 +1,50 @@
+/* Copyright 2018 Google LLC.
+SPDX-License-Identifier: Apache-2.0 */
+
+/* CSS files add styling rules to your content */
+
+body {
+  font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+  margin: 2em;
+}
+
+h1 {
+  text-align: center;
+}
+
+.toolbar {
+  width: 100%;
+  display: flex;
+  margin-top: 16px;
+  justify-content: center;
+}
+
+.instructions {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+output {
+  display: block;
+  color: gray;
+  margin: 32px 16px;
+  text-align: center;
+  border: 1px silver dashed;
+  padding: 16px;
+  border-radius: 16px;  
+}
+
+button {
+  display: block;
+  font-size: 16px;
+  border: 2px solid black;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 0 8px;
+  text-transform: uppercase;
+}
+
+/* Hide Install button until beforeinstallprompt fires */
+#install { 
+  display: none;
+}
