@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Web Navigator</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+
+      #navigation-bar {
+        background-color: #f2f2f2;
+        padding: 10px;
+      }
+
+      #navigation-bar input[type="text"] {
+        width: 80%;
+        padding: 5px;
+        font-size: 16px;
+      }
+
+      #navigation-bar input[type="submit"] {
+        padding: 5px 15px;
+        font-size: 16px;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+
+      #content-frame {
+        width: 100%;
+        height: calc(100vh - 40px);
+        border: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="navigation-bar">
+      <form id="navigation-form">
+        <input type="text" id="url-input" placeholder="Enter a URL" />
+        <input type="submit" value="Go" />
+      </form>
+    </div>
+    <iframe id="content-frame"></iframe>
+
+    <script>
+      var form = document.getElementById("navigation-form");
+      var iframe = document.getElementById("content-frame");
+
+      form.addEventListener("submit", function (event) {
+        event.preventDefault();
+        var urlInput = document.getElementById("url-input");
+        var url = urlInput.value;
+
+        // Update the iframe source
+        iframe.src = url;
+      });
+    </script>
+  </body>
+</html>

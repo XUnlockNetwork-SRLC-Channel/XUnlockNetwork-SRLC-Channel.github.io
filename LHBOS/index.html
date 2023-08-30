@@ -1,0 +1,155 @@
+<!DOCTYPE html><html><head></head><body onload="startLoop()" style="display:none;">
+
+  <title>LightHome Brew OS</title>
+     <script src="app.js"></script>
+    <!--  Web App Manifest include  -->
+    <link rel="manifest" href="manifest.webmanifest">
+  <link rel="shortcut icon" type="image/png" href="images/LHBOS-icon.png">
+  <link href="css/clockstyle.css" rel="stylesheet" id="stylesheet" type="text/css">
+  <link href="css/appstyle.css" rel="stylesheet" id="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,0,0" class="donotremove-ss">
+
+
+  <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+
+  <div class="navbar" id="navbar">
+    <span id="extra" style="order: 99999;"></span>
+    <a href="javascript:openapp('home','');" class="iconbtn">
+      <span class="material-symbols-outlined" style="vertical-align: middle; background-color: rgba(0, 0, 0, 0);color: black; font-size: 24px; width: 4px; text-indent: -4px;">
+      home
+      </span>
+    </a>
+    <a href="javascript:openapp('settings','if youre reading this youre gay');" class="iconbtn">
+      <span class="material-symbols-outlined" style="vertical-align: middle; background-color: rgba(0, 0, 0, 0);color: black; font-size: 24px; width: 4px; text-indent: -4px;">
+        settings
+      </span>
+    </a>
+    <a href="javascript:openapp('appstore','browser.html');" class="iconbtn">
+      <span class="material-symbols-outlined" style="vertical-align: middle; background-color: rgba(0, 0, 0, 0);color: black; font-size: 24px; width: 4px; text-indent: -4px;">
+        web_asset
+      </span>
+    </a>
+    <a href="javascript:openapp('games','mongus');" class="iconbtn">
+      <span class="material-symbols-outlined" style="vertical-align: middle; background-color: rgba(0, 0, 0, 0);color: black; font-size: 24px; width: 4px; text-indent: -4px;">
+        stadia_controller
+      </span>
+    </a>
+    <a href="javascript:openapp('muenster','http://bubblybreakableoutlier.arieswalls.repl.co');" class="iconbtn">
+      <span class="material-symbols-outlined" style="vertical-align: middle; background-color: rgba(0, 0, 0, 0);color: black; font-size: 24px; width: 4px; text-indent: -4px;">
+        chat
+      </span>
+    </a>
+    | 
+    
+  </div>
+
+  <div class="main" id="main">
+    <div id="home" class="app">
+      <span class="confont">
+        <b>WELCOME TO LightHome Brew OS</b>
+        <br>
+        LightHome Brew OS is like a mini OS in your browser. It has unblocked games, apps, and tools!
+        <br><br>
+        If you want to learn how to get your own app working, its coming soon<br>
+       
+        <br><br>
+        <a href="https://docs.google.com/document/d/18SeXMmjVSpxTnkv8gb_lvXuMb30x4uh1hqbsZxQJoaw/edit">
+          <img style="max-height: 150px" src="images/gq-ad.PNG">
+        </a><br>
+       
+      </span>
+    </div>
+    <iframe style="display: none;" class="app" id="notepad" src="about:blank"></iframe>
+    <iframe style="display: none;" class="app" id="discord" src="about:blank"></iframe>
+    <iframe style="display: none;" class="app" id="muenster" src="about:blank"></iframe>
+    <iframe style="display: none;" class="app" id="twitter" src="about:blank"></iframe>
+    <iframe style="display: none;" class="app" id="game" src="about:blank"></iframe>
+    <embed style="display: none;" class="app" id="flashgame" src="about:blank">
+    <iframe style="display: none;" class="app" id="appstore" src="about:blank"></iframe>
+
+    <div style="display: none;" id="classicappstore">
+      <div class="confont" style="display:inline;width:50%;float:left;">
+        <b>APP STORE</b><br><br>
+        <b style="color: #1DA1F2;">Twitter</b> - <a class="consolea" href="javascript:installAppV2('clockwork-app-store.glitch.me','https://redstone-nw.netlify.app/clockwork-app/twitter.js');">[INSTALL]</a> - <a class="consolea" href="https://redstone-nw.netlify.app/clockwork-app/twitter.js">[SOURCE]</a><br>
+        <b style="color: #738ADB;">Discord</b> - <a class="consolea" href="javascript:installAppV2('clockwork-app-store.glitch.me', 'https://redstone-nw.netlify.app/clockwork-app/discord.js');">[INSTALL]</a> - <a class="consolea" href="https://redstone-nw.netlify.app/clockwork-app/discord.js">[SOURCE]</a><br>
+        <b style="color: white;">Shadow Proxy</b> - <a class="consolea" href="javascript:installAppV2('clockwork-app-store.glitch.me', 'https://redstone-nw.netlify.app/clockwork-app/shadow.js');">[INSTALL]</a> - <a class="consolea" href="https://redstone-nw.netlify.app/clockwork-app/shadow.js">[SOURCE]</a><br>
+        <b>RetroArch</b> - <a class="consolea" href="javascript:installAppV2('clockwork-app-store.glitch.me', 'https://redstone-nw.netlify.app/clockwork-app/retroarch.js');">[INSTALL]</a> - <a class="consolea" href="https://redstone-nw.netlify.app/clockwork-app/retroarch.js">[SOURCE]</a><br>
+        <b style="color: red;">Notepad</b> - <a class="consolea" href="javascript:installAppV2('clockwork-app-store.glitch.me', 'https://redstone-nw.netlify.app/clockwork-app/notepad.js');">[INSTALL]</a> - <a class="consolea" href="https://redstone-nw.netlify.app/clockwork-app/notepad.js">[SOURCE]</a><br>
+        <b style="color: #800;">4chan</b> - <a class="consolea" href="javascript:installAppV2('clockwork-app-store.glitch.me', 'https://redstone-nw.netlify.app/clockwork-app/4chan.js');">[INSTALL]</a> - <a class="consolea" href="https://redstone-nw.netlify.app/clockwork-app/4chan.js">[SOURCE]</a><br>
+        <b style="color: #00ff00;">Bitplanes by <a style="color: #00ff00;" href="https://github.com/L413">L413</a></b> - <a class="consolea" href="javascript:installAppV2('clockwork-app-store.glitch.me', 'https://l413.github.io/Clockwork-OS-Custom/bitplanesapp.js');">[INSTALL]</a> - <a class="consolea" href="https://l413.github.io/Clockwork-OS-Custom/bitplanesapp.js">[SOURCE]</a><br>
+        <b style="color: #1DA1F2;">Tiny Fishing by <a style="color: #1DA1F2;" href="https://github.com/L413">L413</a></b> - <a class="consolea" href="javascript:installAppV2('clockwork-app-store.glitch.me', 'https://l413.github.io/Clockwork-OS-Custom/tinyfishingapp.js');">[INSTALL]</a> - <a class="consolea" href="https://l413.github.io/Clockwork-OS-Custom/tinyfishingapp.js">[SOURCE]</a><br>
+        <b style="color: #FFA500;">2048 by <a style="color: #FFA500;" href="https://github.com/L413">L413</a></b> - <a class="consolea" href="javascript:installAppV2('clockwork-app-store.glitch.me', 'https://l413.github.io/Clockwork-OS-Custom/2048app.js');">[INSTALL]</a> - <a class="consolea" href="https://l413.github.io/Clockwork-OS-Custom/2048app.js">[SOURCE]</a><br>
+        <br>
+        <a class="consolea" href="javascript:installApp(null);">[INSTALL CUSTOM SCRIPT]</a><br>
+      </div>
+      <div class="confont" style="display:inline;width:50%;float:left;">
+        <b>THEME STORE</b><br><br>
+        You can only have one theme installed at a time.<br>
+        <br>
+        <br>
+        <b style="color: white;">Monospace</b> - <a class="consolea" href="javascript:addTheme('https://redstone-nw.netlify.app/clockwork-app/codestyle.css');">[INSTALL]</a><br>
+        <b style="color: blue;">Windows Knockoff</b> - <a class="consolea" href="javascript:addTheme('https://redstone-nw.netlify.app/clockwork-app/windowstyle.css');">[INSTALL]</a><br>
+        <b style="color: purple;">Soft Purple by <a style="color: purple;" href="https://github.com/L413">L413</a></b> - <a class="consolea" href="javascript:addTheme('https://l413.github.io/Clockwork-OS-Custom/softpurpletheme.css');">[INSTALL]</a><br>
+        <br>
+        <br>
+        <a class="consolea" href="javascript:addTheme(null);">[INSTALL CUSTOM THEME]</a><br>
+        <a class="consolea" href="javascript:addTheme('clockstyle.css');">[RESET TO DEFAULT]</a><br>
+      </div>
+    </div>
+
+
+    <div style="display: none;" class="app" id="games">
+      <span class="confont">
+        <b>GAMES MENU - some games may be broken, be patient and wait for more</b><br><br>
+        <a class="consolea" href="javascript:openapp('game','https://antarttycoon.github.io/more/idle-breakout/index.html');">Idle Breakout</a><br>
+        <a class="consolea" href="javascript:openapp('game','https://yexex-9h6r.onrender.com/retro-bowl/apple.html');">Retro Bowl</a><br>
+        <a class="consolea" href="javascript:openapp('game','https://wolfyay.com/');">WolfYay</a><br>
+        <a class="consolea" href="javascript:openapp('game','https://yexex-9h6r.onrender.com/fnf/index.html');">Friday Night Funkin'</a><br>
+        <a class="consolea" href="javascript:openapp('game','https://gg-opensocial.googleusercontent.com/gadgets/ifr?url=https://218463058-163927403382736103.preview.editmysite.com/uploads/b/139890129-297434511671085883/files/mm.xml');">Monkey Mart'</a><br>
+        <a class="consolea" href="javascript:openapp('flashgame','https://redstone-nw.netlify.app/clockwork-app/swf/n.swf');">N</a><br>
+        <a class="consolea" href="javascript:openapp('flashgame','https://redstone-nw.netlify.app/clockwork-app/swf/ducklife.swf');">Duck Life</a><br>
+        <a class="consolea" href="javascript:openapp('game','https://papaspizzeria.io/papas-pizzeria.embed');">Papa's Pizzeria</a><br>
+        <a class="consolea" href="javascript:openapp('flashgame','https://yexex-9h6r.onrender.com/bloonstd2.swf');">Bloons Tower Defense 2</a><br>
+        <a class="consolea" href="javascript:openapp('flashgame','https://redstone-nw.netlify.app/clockwork-app/swf/Bloxors.swf');">Bloxorz</a><br>
+      </span>
+    </div>
+
+    <div style="display: none;" class="app" id="settings-apps">
+      <span class="confont">
+        <b>MANAGE APPS - <a class="consolea" href="javascript:openapp('settings','');">BACK</a></b><br>
+        <span class="confont" id="applist"></span>
+      </span>
+    </div>
+    
+    <div style="display: none;" class="app" id="settings">
+      <span class="confont">
+        <b>SETTINGS</b><br>
+        <a class="consolea" href="javascript:openapp('settings-apps','');">Manage Apps</a><br>
+        <a class="consolea" href="javascript:openapp('classicappstore','mongus');">Classic App Store</a><br>
+        <a class="consolea" href="javascript:openapp('settings-about','');">About LHBOS</a><br>
+        <a class="consolea" href="javascript:factoryReset();">Factory Reset</a><br>
+      </span>
+    </div>
+
+    <div style="display: none;" class="app" id="settings-about">
+      <span class="confont">
+        <b>ABOUT LHBOS - <a class="consolea" href="javascript:openapp('settings','');">BACK</a></b></span><br>        
+        Version 1.0.4<br><br>
+     
+      
+    </div>
+    <div style="display: none;" class="app" id="settings-debug">
+      <span class="confont">
+        <b>DEBUG INFORMATION - <a class="consolea" href="javascript:openapp('settings','');">BACK</a></b></span><br>        
+        This is debug info for LHBOS developers to use when troubleshooting. Most other people won't get much use out of this.<br><br>
+        <b>localStorage.getItem("apps") = </b><span id="localAppsList">The debug menu broke :(</span>
+      
+    </div>
+  </div>
+  
+  <script src="js/LHBOS.js"></script>
+ <section class="toolbar">
+        <button id="install">Install this App</button>
+      </section>
+
+</body></html>
