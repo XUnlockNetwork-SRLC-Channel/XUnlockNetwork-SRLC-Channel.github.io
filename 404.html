@@ -1,4 +1,5 @@
 404
+<body onload="notifyUpdted()">
 <script>
   function notifyUpdted() {
   if (!("Notification" in window)) {
@@ -38,5 +39,5 @@
   // At last, if the user has denied notifications, and you
   // want to be respectful there is no need to bother them anymore.
 }
-document.onload = notifyUpdted()
+
 </script>
