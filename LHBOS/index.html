@@ -12,6 +12,7 @@
 
   <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
   <script src="js/FirmwareUpdated.js"></script>
+    <script src="js/Notification.js"></script>
   <div class="navbar" id="navbar">
     <span id="extra" style="order: 99999;"></span>
     <a href="javascript:openapp('home','');" class="iconbtn">
@@ -53,9 +54,7 @@
         If you want to learn how to get your own app working, its coming soon<br>
        Also Introducing muenster a school chat app
         <br><br>
-        <a href="https://docs.google.com/document/d/18SeXMmjVSpxTnkv8gb_lvXuMb30x4uh1hqbsZxQJoaw/edit">
-          <img style="max-height: 150px" src="images/gq-ad.PNG">
-        </a><br>
+       <br>
        
       </span>
     </div>
@@ -144,6 +143,7 @@
     <div style="display: none;" class="app" id="settings-debug">
       <span class="confont">
         <b>DEBUG INFORMATION - <a class="consolea" href="javascript:openapp('settings','');">BACK</a></b></span><br>        
+ <button onclick="Notify("Current Firmware:BrewOS 2.1 & BrewOS 5 ")">Current Firmware</button>
         This is debug info for LHBOS developers to use when troubleshooting. Most other people won't get much use out of this.<br><br>
                <a class="consolea" href="javascript:addTheme(null);">[INSTALL CUSTOM THEME]</a><br>
               <a class="consolea" href="javascript:installApp(null);">[INSTALL CUSTOM SCRIPT]</a><br>
