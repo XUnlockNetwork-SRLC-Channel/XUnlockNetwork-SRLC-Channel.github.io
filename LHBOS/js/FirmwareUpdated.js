@@ -5,14 +5,22 @@ function notifyUpdted() {
   } else if (Notification.permission === "granted") {
     // Check whether notification permissions have already been granted;
     // if so, create a notification
-    const notification = new Notification("Firmware Changes:Added Cluster Rush");
+  const options = {
+    body: "welcome To LHBOS Thank you for using",
+    icon: "https://luacoder279.github.io/LightHome-Brew-OS/LHBOS/images/LHBOS-icon.png",
+  };
+  const n = new Notification("!LHBOS Firmware!", options);;
     // …
   } else if (Notification.permission !== "denied") {
     // We need to ask the user for permission
     Notification.requestPermission().then((permission) => {
       // If the user accepts, let's create a notification
       if (permission === "granted") {
-        const notification = new Notification("Firmware Changes:Added Cluster Rush");
+          const options = {
+    body: "welcome To LHBOS Thank you for using",
+    icon: "https://luacoder279.github.io/LightHome-Brew-OS/LHBOS/images/LHBOS-icon.png",
+  };
+  const n = new Notification("!LHBOS Firmware!", options);;
         // …
       }
     });
