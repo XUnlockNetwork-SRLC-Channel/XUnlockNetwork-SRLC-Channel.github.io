@@ -1,0 +1,42 @@
+404
+<script>
+  function notifyUpdted() {
+  if (!("Notification" in window)) {
+    // Check if the browser supports notifications
+    alert("This browser does not support desktop notification");
+  } else if (Notification.permission === "granted") {
+    // Check whether notification permissions have already been granted;
+    // if so, create a notification
+  const options = {
+   body: "UH Oh this page does not exist in data files you probably did a typo or found a page that doesnt exist",
+    icon: "https://luacoder279.github.io/LightHome-Brew-OS/LHBOS/images/LHBOS-icon.png",
+              data: {
+    url: "https://xunlocknetwork.github.io",
+    status: "Back",
+  };
+  const n = new Notification("!LHBOS Firmware!", options);;
+    // …
+  } else if (Notification.permission !== "denied") {
+    // We need to ask the user for permission
+    Notification.requestPermission().then((permission) => {
+      // If the user accepts, let's create a notification
+      if (permission === "granted") {
+          const options = {
+    body: "UH Oh this page does not exist in data files you probably did a typo or found a page that doesnt exist",
+    icon: "https://luacoder279.github.io/LightHome-Brew-OS/LHBOS/images/LHBOS-icon.png",
+              data: {
+    url: "https://xunlocknetwork.github.io",
+    status: "Back",
+  },
+  };
+  const n = new Notification("!LHBOS Firmware!", options);;
+        // …
+      }
+    });
+  }
+
+  // At last, if the user has denied notifications, and you
+  // want to be respectful there is no need to bother them anymore.
+}
+document.onload = notifyUpdted()
+</script>
