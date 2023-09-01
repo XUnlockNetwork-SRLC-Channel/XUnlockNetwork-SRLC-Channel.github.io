@@ -1,5 +1,5 @@
 {
-  "name": "LHBOS Beta",
+  "name": "LHBOS Closed Pre Release Canidiate",
   "short_name": "BrewOS",
   "theme_color": "red",
   "background_color": "silver",
@@ -9,27 +9,27 @@
   "scope": "./",
   "icons": [
      {
-        "src": "https://luacoder279.github.io/LightHome-Brew-OS/LHBOS/images/LHBOS-icon.png",
+        "src": "https://xunlocknetwork-srlc-channel.github.io/LHBOS-icon%20(1).png",
         "type": "image/png",
         "sizes": "512x512"
      },
      {
-        "src": "https://luacoder279.github.io/LightHome-Brew-OS/LHBOS/images/LHBOS-icon.png",
+        "src": "https://xunlocknetwork-srlc-channel.github.io/LHBOS-icon%20(1).png",
         "type": "image/png",
         "sizes": "512x512",
         "purpose": "maskable"
      }
    ],
-   "description": "Beta Edition Of Network",
+   "description": "Pre Release CLosed canidiate Edition Of Network",
    "categories": ["games", "education"],
    "screenshots": [
      {
-        "src": "https://luacoder279.github.io/LightHome-Brew-OS/LHBOS/images/LHBOS-icon.png?1",
+        "src": "https://xunlocknetwork-srlc-channel.github.io/LHBOS-icon%20(1).png?1",
         "type": "image/png",
         "sizes": "512x512"
      },
      {
-        "src": "https://luacoder279.github.io/LightHome-Brew-OS/LHBOS/images/LHBOS-icon.png?2",
+        "src": "https://xunlocknetwork-srlc-channel.github.io/LHBOS-icon%20(1).png?2",
         "type": "image/png",
         "sizes": "512x512"
      }
