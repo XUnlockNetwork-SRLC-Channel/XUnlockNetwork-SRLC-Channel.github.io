@@ -7,9 +7,9 @@ function notifyUpdted() {
     // if so, create a notification
   const options = {
     body: "welcome To LHBOS Thank you for using",
-    icon: "https://luacoder279.github.io/LightHome-Brew-OS/LHBOS/images/LHBOS-icon.png",
+    icon: "https://xunlocknetwork-srlc-channel.github.io/LHBOS-icon%20(1).png",
   };
-  const n = new Notification("!LHBOS Firmware!", options);;
+  const n = new Notification("LHBOS Pre Release Canidiate", options);;
     // …
   } else if (Notification.permission !== "denied") {
     // We need to ask the user for permission
@@ -18,9 +18,9 @@ function notifyUpdted() {
       if (permission === "granted") {
           const options = {
     body: "welcome To LHBOS Thank you for using",
-    icon: "https://luacoder279.github.io/LightHome-Brew-OS/LHBOS/images/LHBOS-icon.png",
+    icon: "https://xunlocknetwork-srlc-channel.github.io/LHBOS-icon%20(1).png",
   };
-  const n = new Notification("!LHBOS Firmware!", options);;
+  const n = new Notification("LHBOS Pre Release Canidiate", options);;
         // …
       }
     });
