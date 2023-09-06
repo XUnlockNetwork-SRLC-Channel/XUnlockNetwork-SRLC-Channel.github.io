@@ -17,12 +17,11 @@ return
 }
 }
 }
-function SystemSetpassword()
-{
- var set = prompt("set passcode)
+
+document.getElementById("demo").addEventListener("click", function () {
+   var set = prompt("set passcode)
             localStorage.setItem("Password",set);
 }
-document.getElementById("demo").addEventListener("click",SystemSetpassword)
 window.addEventListener("load", (event) => {
 askforPass();
 });
