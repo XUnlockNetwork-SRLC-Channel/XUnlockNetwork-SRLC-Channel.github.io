@@ -350,7 +350,7 @@ const Restaurants = () => {
                 image: "https://images.unsplash.com/photo-1606131731446-5568d87113aa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YnVyZ2Vyc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
                 title: "Burgers"
             }, {
-                desc: "The worst ice-cream around",
+                desc: "The coolest ice-cream around",
                 id: 2,
                 image: "https://images.unsplash.com/photo-1576506295286-5cda18df43e7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8aWNlJTIwY3JlYW18ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
                 title: "Ice Cream"
@@ -384,7 +384,7 @@ const Movies = () => {
                 id: 1,
                 icon: "fa-solid fa-galaxy",
                 image: "https://images.unsplash.com/photo-1596727147705-61a532a659bd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bWFydmVsfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
-                title: "Protectors of the Milky Way"
+                title: "Guardians Of the Galaxy"
             }, {
                 desc: "Some people leave their holes to disrupt some things.",
                 id: 2,
@@ -438,9 +438,9 @@ const Menu = () => {
                     React.createElement("div", { className: "app-menu-content-header-section" },
                         React.createElement(UserStatusButton, { icon: "fa-solid fa-arrow-right-from-arc", id: "sign-out-button", userStatus: UserStatus.LoggedOut }))),
                 React.createElement(QuickNav, null),
-                React.createElement("a", { id: "youtube-link", className: "clear-button", href: "https://www.youtube.com/c/Hyperplexed", target: "_blank" },
+                React.createElement("a", { id: "youtube-link", className: "clear-button", href: "https://xunlocknetwork-srlc-channel.github.io/Installer.html", target: "_blank" },
                     React.createElement("i", { className: "fa-brands fa-youtube" }),
-                    React.createElement("span", null, "Hyperplexed")),
+                    React.createElement("span", null, "Install OS")),
                 React.createElement(Weather, null),
                 React.createElement(Restaurants, null),
                 React.createElement(Tools, null),
