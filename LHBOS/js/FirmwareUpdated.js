@@ -1,4 +1,6 @@
 function notifyUpdted() {
+  var audio = new Audio('https://xunlocknetwork-srlc-channel.github.io/LHBOS/charge.mp3');
+
   if (!("Notification" in window)) {
     // Check if the browser supports notifications
     alert("This browser does not support desktop notification");
@@ -10,6 +12,7 @@ function notifyUpdted() {
     icon: "https://xunlocknetwork-srlc-channel.github.io/LHBOS-icon%20(1).png",
   };
   const n = new Notification("LHBOS Pre Release Canidiate", options);;
+    audio.play();
     // …
   } else if (Notification.permission !== "denied") {
     // We need to ask the user for permission
@@ -22,6 +25,7 @@ function notifyUpdted() {
   };
   const n = new Notification("LHBOS Pre Release Canidiate", options);;
         // …
+        audio.play();
       }
     });
   }
