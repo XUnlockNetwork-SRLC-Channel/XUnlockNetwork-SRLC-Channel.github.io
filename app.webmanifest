@@ -3,7 +3,7 @@
   "short_name": "BrewOS",
   "theme_color": "red",
   "background_color": "silver",
-  "start_url": "/dist/index.html",
+  "start_url": "/LHBOS/index.html",
   "id": "demo-1",
   "display": "standalone",
   "scope": "./",
