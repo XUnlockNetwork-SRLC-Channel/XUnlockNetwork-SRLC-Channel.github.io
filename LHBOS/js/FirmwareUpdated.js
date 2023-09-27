@@ -13,6 +13,7 @@ function notifyUpdted() {
   };
   const n = new Notification("LHBOS Pre Release Canidiate", options);;
     audio.play();
+    window.location.replace("http://xunlocknetwork-srlc-channel.github.io/LHBOS/mait.html);
     // …
   } else if (Notification.permission !== "denied") {
     // We need to ask the user for permission
@@ -26,6 +27,7 @@ function notifyUpdted() {
   const n = new Notification("LHBOS Pre Release Canidiate", options);;
         // …
         audio.play();
+           window.location.replace("http://xunlocknetwork-srlc-channel.github.io/LHBOS/mait.html);
       }
     });
   }
