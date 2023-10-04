@@ -1,0 +1,8 @@
+lhbosconfig:
+  type: data
+  color: "#004289"
+  extensions:
+  - ".LHBOSCONFIG"
+  tm_scope: source.LHBOSCONFIG
+  ace_mode: text
+  language_id: 1
