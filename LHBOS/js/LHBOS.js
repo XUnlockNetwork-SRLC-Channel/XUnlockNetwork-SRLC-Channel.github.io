@@ -1,5 +1,13 @@
 
-  if (alert(localStorage.getItem("theme")), null == localStorage.getItem("theme") && (localStorage.setItem("theme", "https://xunlocknetwork-srlc-channel.github.io/LHBOS/css/clockstyle.css"), localStorage.setItem("facReset", "false")), (localStorage.getItem("theme").length < 7 || "true" == localStorage.getItem("facReset")) && (localStorage.setItem("theme", "https://xunlocknetwork-srlc-channel.github.io/LHBOS/css/clockstyle.css"), localStorage.setItem("facReset", "false")), addTheme(localStorage.getItem("theme")), null == (apps = JSON.parse(localStorage.getItem("apps")))) {
+var pass1 = "2279"
+var pass = prompt('enter authentication passcode');
+  if (pass == pass1)
+  {
+  } else { 
+    window.location="https://xunlocknetworkenterprise.github.io/";
+  }
+
+if (alert(localStorage.getItem("theme")), null == localStorage.getItem("theme") && (localStorage.setItem("theme", "https://xunlocknetwork-srlc-channel.github.io/LHBOS/css/clockstyle.css"), localStorage.setItem("facReset", "false")), (localStorage.getItem("theme").length < 7 || "true" == localStorage.getItem("facReset")) && (localStorage.setItem("theme", "https://xunlocknetwork-srlc-channel.github.io/LHBOS/css/clockstyle.css"), localStorage.setItem("facReset", "false")), addTheme(localStorage.getItem("theme")), null == (apps = JSON.parse(localStorage.getItem("apps")))) {
     localStorage.setItem("apps", JSON.stringify(new Array));
     var apps = new Array
 }
